@@ -16,5 +16,5 @@ command 1 : $export LD_LIBRARY_PATH=/usr/local/MATLAB/R2016b/bin/glnxa64
 command 2 : $g++ -Ofast decoding.cpp BECconstruct.cpp polar.cpp use.cpp -o SCsampler -I/usr/local/MATLAB/R2016b/extern/include -L/usr/local/MATLAB/R2016b/bin/glnxa64 -lmat -leng -lmx -lmex
 command 3 : $./SCsampler
 To build and run the codes, you are suggested to install MATLAB on your PC (any version after MATLAB2016 is supposed to work correctly). Please find the folder "glnxa64" and the folder "include" in the installation directory and use command 1 and 2 to build. Please make sure the path in command 1 and 2 are correct according to your installation directory. 
-The reason we use MATLAB library is that it provides interfaces between .mat data and C++. The calculations in offline phase are done in MATLAB and the data including Bhattacharyya parameters and transition probabilities are save in the MATLAB data format. It allows C++ to read .mat data correctly.
+The reason we use MATLAB library is that it provides interfaces between .mat data and C++. The calculations in offline phase are done in MATLAB and the data including Bhattacharyya parameters and transition probabilities are saved in the MATLAB data format. It allows C++ to read .mat data correctly.
        
